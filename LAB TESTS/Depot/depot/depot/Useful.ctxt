@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String[]\ generateItemInfo()
+comment1.params=
+comment1.target=java.lang.String\ generateCode()
+comment2.params=len
+comment2.target=java.lang.String\ generateText(int)
+comment3.params=
+comment3.target=java.lang.String[]\ generateStorageAreaInfo()
+numComments=4

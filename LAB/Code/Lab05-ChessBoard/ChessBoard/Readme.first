@@ -1,0 +1,14 @@
+To be able to display with colors you may use the Enigma Console (http://sourceforge.net/projects/enigma-shell/) 
+
+Use Tools->Preferences->Libraries->Add to add from this projects' folder:
+
+enigma-all_en_US.jar
+enigma-console.jar
+enigma-i18n.jar
+enigma-shell.jar
+
+Restart bluej
+
+When the console does not show, restart bluej. 
+
+ 

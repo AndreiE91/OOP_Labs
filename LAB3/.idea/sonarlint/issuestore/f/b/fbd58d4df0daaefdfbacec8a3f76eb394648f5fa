@@ -1,0 +1,8 @@
+
+0
+java:S1220""Move this file to a named package.
+?
+java:S1659")Declare "countVowels" on a separate line.(ñù‰Ö
+J
+java:S1481"4Remove this unused "countConsonants" local variable.(ñù‰Ö
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Øπªº

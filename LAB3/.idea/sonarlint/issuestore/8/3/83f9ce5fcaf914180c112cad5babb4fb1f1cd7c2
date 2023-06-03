@@ -1,0 +1,9 @@
+
+0
+java:S1220""Move this file to a named package.
+X
+java:S2259"BA "NullPointerException" could be thrown; "that" is nullable here.(œ»ÙÊ
+f
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(ç‹—„
+5
+java:S2097"Add a type test to this method.(ç‹—„

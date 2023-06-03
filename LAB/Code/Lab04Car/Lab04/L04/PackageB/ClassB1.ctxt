@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=nb
+comment0.target=ClassB1(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClassB\r\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=b
+comment2.target=java.lang.String\ getInfoFromOtherClass(ClassB)
+numComments=3

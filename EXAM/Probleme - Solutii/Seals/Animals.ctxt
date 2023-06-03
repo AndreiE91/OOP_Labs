@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Animals(int,\ int)
+comment1.params=
+comment1.target=int\ getStep()
+comment2.params=x
+comment2.target=void\ setStep(int)
+comment3.params=
+comment3.target=void\ increaseStep()
+comment4.params=x\ y
+comment4.target=void\ setCoord(int,\ int)
+comment5.params=
+comment5.target=java.awt.Point\ getCoord()
+comment6.params=holes
+comment6.target=boolean\ move(java.awt.Point[])
+numComments=7

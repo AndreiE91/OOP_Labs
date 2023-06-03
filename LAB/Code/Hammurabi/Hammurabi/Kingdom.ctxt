@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=int\ getGrain()
+comment1.target=int\ getArea()
+comment2.params=food\ seed
+comment2.target=void\ simulateOneYear(int,\ int)
+numComments=3

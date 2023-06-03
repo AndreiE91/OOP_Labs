@@ -1,0 +1,52 @@
+<?xml version="1.0"?><content>
+<ANIMAL>
+	<nrOfLegs>2</nrOfLegs>
+	<name>Stork</name>
+	<maintenanceCost>1.5</maintenanceCost>
+	<dangerPerc>0.1</dangerPerc>
+	<takenCareOf>false</takenCareOf>
+	<migrates>true</migrates>
+	<avgFlightAltitude>100</avgFlightAltitude>
+	<DISCRIMINANT>STORK</DISCRIMINANT>
+</ANIMAL>
+<ANIMAL>
+	<nrOfLegs>4</nrOfLegs>
+	<name>Cow</name>
+	<maintenanceCost>3.0</maintenanceCost>
+	<dangerPerc>0.05</dangerPerc>
+	<takenCareOf>false</takenCareOf>
+	<normalBodyTemp>38.0</normalBodyTemp>
+	<percBodyHair>90.0</percBodyHair>
+	<DISCRIMINANT>COW</DISCRIMINANT>
+</ANIMAL>
+<ANIMAL>
+	<nrOfLegs>0</nrOfLegs>
+	<name>Fish</name>
+	<maintenanceCost>0.1</maintenanceCost>
+	<dangerPerc>0.0</dangerPerc>
+	<takenCareOf>false</takenCareOf>
+	<avgSwimDepth>100</avgSwimDepth>
+	<typeOfWater>freshwater</typeOfWater>
+	<DISCRIMINANT>FISH</DISCRIMINANT>
+</ANIMAL>
+<ANIMAL>
+	<nrOfLegs>2</nrOfLegs>
+	<name>Pigeon</name>
+	<maintenanceCost>0.1</maintenanceCost>
+	<dangerPerc>0.0</dangerPerc>
+	<takenCareOf>false</takenCareOf>
+	<migrates>false</migrates>
+	<avgFlightAltitude>60</avgFlightAltitude>
+	<DISCRIMINANT>PIGEON</DISCRIMINANT>
+</ANIMAL>
+<ANIMAL>
+	<nrOfLegs>4</nrOfLegs>
+	<name>Cow</name>
+	<maintenanceCost>3.0</maintenanceCost>
+	<dangerPerc>0.05</dangerPerc>
+	<takenCareOf>false</takenCareOf>
+	<normalBodyTemp>38.0</normalBodyTemp>
+	<percBodyHair>90.0</percBodyHair>
+	<DISCRIMINANT>COW</DISCRIMINANT>
+</ANIMAL>
+</content>

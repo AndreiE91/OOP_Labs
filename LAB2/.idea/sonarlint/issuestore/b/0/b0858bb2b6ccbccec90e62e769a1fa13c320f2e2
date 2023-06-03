@@ -1,0 +1,13 @@
+
+0
+java:S1220""Move this file to a named package.
+Q	java:S125"<This block of commented-out lines of code should be removed.(Äã¾
+N	java:S106"9Replace this use of System.out or System.err by a logger.(æÎ†²
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¥¶ÊÜ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ØŽÅÌøÿÿÿÿ
+?
+java:S2129"$Remove this "BigInteger" constructor(èù¨ìøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ô»ðç
+?
+java:S2129"$Remove this "BigInteger" constructor(‡ŠÛ˜üÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Ýí¯g

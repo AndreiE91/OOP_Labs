@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=rep
+comment0.target=Bridge(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Bridge\r\n
+comment1.params=column
+comment1.target=boolean\ iAmHit(int)
+comment1.text=\r\n\ Returns\ true\ if\ the\ bridge\ was\ hit;\ false\ otherwise\r\n\ \r\n\ @param\ \ column\ \ \ column\ of\ the\ ship\ which\ may\ hit\ bridge\r\n\ @return\ true\ \ \ \ \ if\ column\ of\ the\ ship\ is\ the\ column\ of\ a\ pilon\ (marked\ as\ 'B')\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

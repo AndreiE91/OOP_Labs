@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tabla()
+comment1.params=x
+comment1.target=void\ setPozitii(int[])
+comment2.params=x
+comment2.target=boolean\ validMove(int[])
+comment3.params=
+comment3.target=boolean\ moveHorse()
+comment4.params=
+comment4.target=void\ moveT()
+numComments=5

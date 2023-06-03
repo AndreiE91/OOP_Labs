@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=i\ c\ d
+comment0.target=ClassImplementingInterface2_2(int,\ char,\ double)
+comment0.text=\nConstructor\ for\ ClassImplementingInterface2_2\n@param\ i\ integer\ to\ wrap\n@param\ c\ char\ to\ wrap\n@param\ d\ double\ to\ truncate\ to\ long\n\n
+comment1.params=i
+comment1.target=Integer\ methodA(int)
+comment1.text=\nmethodA\nWraps\ an\ integer\n@param\ \ i\ \ \ \ integer\ to\ wrap\n@return\ \ \ \ \ \ wrapped\ integer\ \n\n
+comment2.params=c
+comment2.target=Character\ methodB(char)
+comment2.text=\nmethodB\nWraps\ a\ char\n@param\ \ c\ \ \ \ character\ to\ wrap\n@return\ \ \ \ \ \ wrapped\ char\ \n\n
+comment3.params=d
+comment3.target=long\ methodC(double)
+comment3.text=\nmethodC\nTruncates\ a\ double\ to\ a\ long\n@param\ \ d\ \ \ \ double\ to\ truncate\n@return\ \ \ \ \ \ long\ possibly\ equal\ with\ the\ double\ argument\n\n
+numComments=4

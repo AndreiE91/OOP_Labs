@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TestDrive()
+comment0.text=\r\n\ Constuctor\ for\ class\ TestDrive\r\n\ makes\ a\ test\ drive\ for\ NUM_CARS\ cars\r\n
+comment1.params=numCars
+comment1.target=TestDrive(int)
+comment1.text=\r\n\ Constuctor\ for\ class\ TestDrive\r\n\ makes\ a\ test\ drive\ for\ numCars\ cars\r\n\ @param\ numCars\ number\ of\ cars\ in\ atest\ drive\r\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=brand\ color\ power\ maxSpeed\ accelerationStep
+comment3.target=Car\ createCar(java.lang.String,\ java.awt.Color,\ int,\ int,\ int)
+comment3.text=\r\n\ Factory\ method\ to\ create\ a\ Car\ object\ with\ valid\ parameters\r\n\ @param\ brand\ name\ or\ manufacturer.\r\n\ @param\ color\ color\ of\ the\ Car\ object\ -\ one\ of\ Java\ color\ constants\r\n\ @param\ power\ engine\ power\r\n\ @param\ accelerationStep\ increase\ in\ speed\ when\ gas\ pedal\ pushed\r\n
+comment4.params=
+comment4.target=int\ selectCar()
+comment4.text=\r\n\ Displays\ a\ list\ of\ known\ cars\r\n\ and\ allows\ user\ to\ select\ one\ using\ a\ text-based\ menu\r\n\ @return\ the\ id\ of\ the\ car,\ nonnegative\ integer\r\n
+comment5.params=carId
+comment5.target=void\ driveCar(int)
+comment5.text=\r\n\ Asks\ for\ user\ input\ for\ a\ car\ identificated\ by\ carId\r\n\ and\ shows\ the\ effect\ of\ controlling\ it\r\n\ @param\ carId\ id\ of\ car;\ noinnegative\ integer\r\n
+numComments=6

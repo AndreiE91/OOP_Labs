@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=MyException(String)
+comment0.text=\nConstructor\ for\ objects\ of\ class\ ExceptionBase\n@param\ s\ String\ for\ e.getMessage()\n\n
+numComments=1

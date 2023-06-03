@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=boardSize\ playerNames\ symbols
+comment0.target=Game(int,\ String[],\ char[])
+comment0.text=\nConstructor\n@param\ boardSize\ game\ board\ size\n@param\ playerNames\ player\ names\ in\ order\ of\ turns\n@param\ simboluri\ symbols\ used\ by\ players\ to\ mark\ their\ moves\n\n
+comment1.target=void\ main()
+numComments=2

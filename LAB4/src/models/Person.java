@@ -1,0 +1,45 @@
+package models;
+
+public class Person {
+    private String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public static void modify1(Person p) {
+        p = new Person("Modified Name");
+        System.out.print(p.getName());
+    }
+
+    public static void modify2(Person p) {
+        p.setName("Modified Name");
+        System.out.print(p.getName());
+    }
+
+    public static int changeNumber(int number) {
+        number = 11;
+        System.out.println(number); //11
+        return number;
+    }
+
+    public static void main(String[] args) {
+        Person p = new Person("Initial Person");
+        modify1(p);
+        System.out.println("Method modify1(Person p):" + p.getName());
+        modify2(p);
+        System.out.println("Method modify2(Person p):" + p.getName());
+
+        int number = 10;
+        number = changeNumber(number);
+        System.out.println(number);
+    }
+}

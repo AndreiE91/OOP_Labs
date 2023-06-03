@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rau()
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment10.params=sc\ rind
+comment10.target=void\ citesteApa(java.util.Scanner,\ int)
+comment11.params=sc
+comment11.target=void\ citestePod(java.util.Scanner)
+comment2.params=
+comment2.target=int[]\ getPosVartejuri()
+comment3.params=
+comment3.target=int[]\ getVartejuriDeLansat()
+comment4.params=
+comment4.target=boolean\ maiSuntVartejuri()
+comment5.params=
+comment5.target=void\ executaPas()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment7.params=
+comment7.target=void\ initApa()
+comment8.params=
+comment8.target=void\ citesteConfig()
+comment9.params=sc
+comment9.target=void\ citesteVartejuri(java.util.Scanner)
+numComments=12

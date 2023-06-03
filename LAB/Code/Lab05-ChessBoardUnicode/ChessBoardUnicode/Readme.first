@@ -1,0 +1,20 @@
+You need to install the Chess Merida Unicode font in Windows. The font is available at:
+
+http://mip.noekeon.org/HTMLTTChess/chess_merida_unicode.html#ChessMeridaUnicode
+
+Download and install it first.
+
+To be able to display with colors you may use the Enigma Console (http://sourceforge.net/projects/enigma-shell/) 
+
+Use Tools->Preferences->Libraries->Add to add from this project's folder:
+
+enigma-all_en_US.jar
+enigma-console.jar
+enigma-i18n.jar
+enigma-shell.jar
+
+Restart bluej
+
+When the console does not show, restart bluej. 
+
+ 

@@ -1,0 +1,44 @@
+Threads:
+- each thread has its own call stack
+- start thread only with method start()
+- if method run() called directly, it will be executed on same call stack, not on a separate thread
+- once a thread is started it cannot be started again - throws IllegalThreadStateException
+
+Thread states:
+- new - Thread instance is created, but start() method not invoked; considered not alive
+- runnable - elligible to run, but is not selected by scheduler to run; first enters this state when method start() is invoked
+- running - thread is seleted by scheduler to run, from runnable pool
+- wating/blocked/sleeping - thread is still alive but not elligible to run
+- dead - method run() completed; may still be available Thread object on heap, but no longer a thread of execution
+
+Thread class methods:
+
+sleep(milliseconds) 
+- static method, throws checked exception InterruptedException
+- does not release the lock on object
+
+yield()
+- static method, change the currently running thread state to runnable
+- then, one thread from thread pool enters in running state
+- it can be same initial thread
+
+join()
+- instance method, stop currently running thread, finish target thread, then continue initial thread
+- ex: t.start(); t.join(); // stop current thread, finish thread t, continue current thread
+- overloaded version: join(millisecond)
+- throws InterruptedException
+- not necessary for target thread to be started, method is implementing by waiting as long as thread is alive
+
+Synchronizing:
+- synchronize on an instance method is equivalent with synchronize(this) on entire method body
+- synchronize on a static method: every loaded class has a corresponding instance of java.lang.Class; the lock is on that object
+- threads calling non-static method in same class, will block each other only if they using same instance
+- threads calling static methods in same class, will always block each other 
+- a non-static method and a static method will never block each other
+- acces static fields from static methods, instance fields from instance methods; if not is legal but not thread-safe
+
+Threads interraction:
+- wait(), notify(), notifyAll() must be called from synchronized context - throws IllegalMonitorStateException
+- wait() - put the currenly running thread in object waiting pool; throws InterruptedException
+- notify() - select a thread from object waiting pool and change its state to runnable
+- notifyAll() - select all threads from object waiting pool and change their state to runnable

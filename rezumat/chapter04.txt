@@ -1,0 +1,28 @@
+Compound operators: 
+- expression on the right side after = is evaluated first; ex: x*= 2 + 5; evaluated as: x = x * (2 + 5);
+
+Relational operators: 
+- result of any assigment expression is the value of variable following the asigment;                       
+- ex: boolean b; if (b = true) { } // if condition is true                      
+- this works only with boolean variables; ex: int x = 0; if (x = 1) { } // will not compile
+
+Equality:
+- when comparing with == operator, primitive types must be able to cast one to other, objects must be in same inheritance tree
+- null can be used in comparision
+- for enums, either the == operator or equals() method can be used to determine if two variables are refering to same enum constant
+
+instanceof: 
+- test the real object type, not reference type;
+- instanceof between two classes from different inheritance tree does not compile            
+- ex: Thread t; if (t instanceof String) { } // compiler error
+- this is true only for classes, not interfaces; 
+- ex: File f; if (f instanceof Runnable) { } // compiles fine with every interface used for test 
+
+String concatenation: 
+- if either operand is String, + is concatenation operator                      
+- if both operands are numbers, + is add operator
+
+Increment and decrement operators: 
+- watch out on final variables
+- applied on wrappers can produce NullPointerException
+- ex: Integer i = null; i++;

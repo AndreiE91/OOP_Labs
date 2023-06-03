@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FuelTank()
+comment0.text=\r\n\ Creeaza\ un\ rezervor\ de\ 60\ litri,\ plin\ \r\n
+comment1.params=cap\ level
+comment1.target=FuelTank(float,\ float)
+comment1.text=\r\n\ Constructor\ for\ fuel\ tanks\r\n\ @param\ cap\ capacity\ in\ litres\ -\ strictly\ positive,\ >\=\ 4\r\n\ @param\ level\ fill\ level\ between\ 0\ and\ 1\r\n
+comment2.params=amount
+comment2.target=float\ fill(float)
+comment2.text=\r\n\ Attempts\ to\ fil;l\ the\ fuel\ tank\ with\ the\ given\ amount\ of\ fuel\r\n\ @param\ amount\ amount\ of\ fule\ in\ litres\r\n\ @return\ how\ much\ did\ not\ go\ into\ the\ tank\r\n
+comment3.params=amount
+comment3.target=boolean\ releaseFuel(float)
+comment3.text=\r\n\ Attempts\ to\ release\ the\ requested\ amount\ from\ the\ tank\r\n\ @param\ amount\ amount\ to\ release\r\n\ @return\ true\ if\ successfully\ released\ the\ requested\ amount,\ false\ otherwise\r\n
+comment4.params=
+comment4.target=float\ getCapacity()
+comment4.text=\r\n\ @return\ capacity\ of\ this\ tank,\ in\ litres\r\n
+comment5.params=
+comment5.target=float\ getLevel()
+comment5.text=\r\n\ @return\ fuel\ level,\ [0..1]\r\n
+numComments=6

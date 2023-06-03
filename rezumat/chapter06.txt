@@ -1,0 +1,129 @@
+Strings: 
+- String objects are immutable, each operation to a String creates a new String object
+- String class methods does not change string value
+
+ex: String x = "a";  
+    x.concat("b"); 
+
+- because Strings are immutable, value of x is not changed; method only returns a new String ("ab") without any reference to it
+- create Strings: String = "abc"; // "abc" is created on string pool
+                  String s = new String("abc"); // two "abc" objects are created, on string pool and also on heap; reference will be to heap object
+- substring() - first argument zero-based, second argument non zero based
+- lenght() - for Strings is method, for arrays is member
+
+StringBuffer - synchronized methods
+StringBuilder - not synchronized methods
+
+- this classes methods modify the object and returns a reference to same modified object; there will be two references to same object
+
+ex: StrinbBuffer sb1 = new StringBuffer("abc");
+    StringBuffer sb2 = sb1.append("def");
+
+- there will be only one object "abcdef", but two references to it, sb1 and sb2; (sb1 == sb2) returns true
+
+Chained methods: - from left to right
+
+ex: String x = "abc";
+    String y = x.concat("def").toUpperCase().replace('C','x');
+
+- first, concat() is called results "abcdef", second toUpperCase() results "ABCDEF", last replace() results "ABxDEF
+
+IO:
+
+File: 
+- constructor does not create file
+- createNewFile() - if file not exists, create it and returns true, else returns false 
+- mkdir() - same for dirs
+- renameTo(newName) - if newName is null, throws NullPointerException
+- list() - return a String[] array containing directory files
+
+BufferedReader: 
+- readLine() - if no data, returns null
+- watch out for IO exceptions, try/catch or declared
+- only writers have flush(), readers don't need
+- FileOutputStream, FileWriter and PrintWriter creates the file if not exists; 
+- ex: PrintWriter writer = new PrintWriter(new File("file.txt"));
+
+Console: 
+- readLine() - returns String
+- readPassword() - returns char[]
+
+Serialization:
+- ObjectOutputStream.writeObject(object) - serialize and write
+- ObjectInpuStream.readObject() - read and deserialize
+- object graphs serialization - object members are serialized too, their class must implements Serialization, else throws NotSerializableException
+- this is not required for transient members
+- on deserialization, transient members takes default values
+- static members are not serialized
+
+Custom serialization: 
+- add private methods writeObject(ObjectOutputStream) and readObject(ObjectInputStream) in class
+- use defaultWriteObject() and defaultReadObject() - normal serialization/deserialization for object
+- data must be write and read in same order
+
+Inheritance: 
+- if class implements Serializable all subclasses automatically implements Serializable
+- class constructor will never run
+- if superclass is not serializable, on deserialization, no-args superconstructor WILL run and inherited members are initialized to initial values
+- superclass must have no-args constructor, else IOException when deserializing
+
+Collections:
+- when serializing a collection, all elements must be serializable
+- concrete collection classes are serializable
+
+Date, numbers and currency:
+
+Date: 
+- constructors: Date(), Date(long); 
+- methods: setTime(long), getTime(), toString() - ex: Mon Nov 09 14:48:01 EET 2009
+
+Calendar: 
+- abstract class, cannot be instantiated; use method getInstance() 
+- returns a Calendar subclass based on timezone and locale
+- convert Calendar to Date: calendar.getTime()
+- difference between add() and roll() - larger parts are incremented for add() and not incremented for roll()
+		   
+Locale: 
+- constructors: Locale(language), Locale(language, country)
+- default Locale - Locale.getDefault();
+- Locale is set for DateFormat and NumberFormat only at time of instantiation, there is no method to change this after
+- methods: getDisplayCountry(), getDisplayCountry(Locale), getDisplayLanguage(), getDisplayLanguage(Locale)
+	
+DateFormat: 
+- abstract class; use getIntance(), getDateInstance(), getDateInstance(int style), getDateInstance(int style, Locale locale)
+- getTimeInstance() like getDateInstance(), getDateTimeInstance(datestyle, timestyle), getDateTimeInstance(datestyle, timestyle, locale)
+- methods: format(Date date) returns a String representation of date; parse(String) returns a Date, can throw ParseException
+   
+NumberFormat: 
+- abstract class, use getInstance(), getInstance(Locale), getCurrencyInstance(), getCurrencyInstance(Locale)
+- method format() - returns a String representation of number or currency
+- parse() throws checked exception
+			 
+Date, Calendar, Locale - java.util 
+DateFormat, NumberFormat - java.text			 
+			 
+Regular expressions: 
+- if a character is used in a match, it cannot be used in another match; ex: source: abababa, pattern: aba, occurences at index 0 and 4
+- metacharacters: \d - digit, \s -space, \w - word character(letter, digit, _), ^ - negation, . - any character
+- ranges: ex: [abc], [a-fA-F]
+- quantifiers - quantifies the part of expression that precedes them; ex: 0[xX]([0-9a-fA-F])+
+              - + one ore more, * - zero or more, ? - zero or one
+- greedy and reluctant - greedy (+, *, ?), reluctant (+?, *?, ??)
+                       - greedy - reads entire source data, ex: source: yyxxxyxx, pattern: .*xx, produces: 0 yyxxxyxx
+                       - reluctant - source: yyxxxyxx, pattern: .*xx, produces: 0 yyxx, 4 xyxx
+- watch out on metacharacters in strings: ex: String pattern = "\d"; - won't compile; String pattern = "\\d"; - this compiles
+- using in java: - Pattern pattern = Pattern.compile(regex); Matcher matcher = pattern.matcher(source);
+                 - use methods of class Matcher - find(), start(), group()
+                 - find() method must be called first, it process the string and sets the members of class Matcher
+
+Tokenizing:
+- String class method split(delimiter) returns String[]; delimiter can be regex
+- class Scanner: - constructor arg can be an InputStream 
+                 - first check if element exists with methods like hasNext(), hasNextInt()
+                 - then get item with next(), nextInt()
+
+Formating:
+- System.out.printf("format string", args);
+- flags: "-" (align left), "+" (include sign), "0" (pad with zeros), "," (locale separator), "(" (enclose negative in parantheses)
+- conversion chars: b (boolean), c (char), d (integer), f (float), s (string)
+- if conversion char and argument type mismatch, throws IllegalFormatConversionException

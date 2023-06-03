@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=nb
+comment0.target=ClassB(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClassB\r\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.lang.String\ getIdAndNumber()
+comment3.params=b1
+comment3.target=java.lang.String\ getAnotherNumberFromB1(ClassB1)
+comment4.params=b1\ val
+comment4.target=void\ changeDataFromB1(ClassB1,\ int)
+numComments=5

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getOi()
+comment1.params=
+comment1.target=Vanatoare()
+comment2.params=
+comment2.target=java.awt.Point[]\ getPoint()
+comment2.text=ublic\ void\ setPoint(Point[]\ c){\r\n\ \ \ \ for(int\ i\=0;i<c.length;i++){\r\n\ \ \ \ //locatii[i]\=new\ Point(c.x,c.y);\r\n\ \ \ \ }\r\n}
+comment3.params=
+comment3.target=boolean\ over()
+comment4.params=xa\ ya\ xb\ yb
+comment4.target=double\ distanta(int,\ int,\ int,\ int)
+comment5.params=
+comment5.target=void\ mutaOaie()
+comment6.params=aux
+comment6.target=boolean\ validMove(int[])
+numComments=7

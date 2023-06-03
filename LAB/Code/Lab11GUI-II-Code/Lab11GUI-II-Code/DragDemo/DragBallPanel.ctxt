@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DragBallPanel()
+comment0.text=Constructor\ sets\ size,\ colors,\ and\ adds\ mouse\ listeners.
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=Ball\ is\ drawn\ at\ the\ last\ recorded\ mouse\ listener\ coordinates.
+comment2.params=e
+comment2.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment2.text=\ Set\ _canDrag\ if\ the\ click\ is\ in\ the\ ball\ (or\ in\ the\ bounding\r\n\ \ \ \ \ \ \ \ box,\ which\ is\ lazy,\ but\ close\ enuf\ for\ this\ program).\r\n\ \ \ \ \ \ \ \ Remember\ displacement\ (dragFromX\ and\ Y)\ in\ the\ ball\r\n\ \ \ \ \ \ \ \ to\ use\ as\ relative\ point\ to\ display\ while\ dragging.\r\n
+comment3.params=e
+comment3.target=void\ mouseDragged(java.awt.event.MouseEvent)
+comment3.text=Set\ x,y\ \ to\ mouse\ position\ and\ repaint.
+comment4.params=e
+comment4.target=void\ mouseExited(java.awt.event.MouseEvent)
+comment4.text=Turn\ off\ dragging\ if\ mouse\ exits\ panel.
+comment5.params=e
+comment5.target=void\ mouseMoved(java.awt.event.MouseEvent)
+comment6.params=e
+comment6.target=void\ mouseEntered(java.awt.event.MouseEvent)
+comment7.params=e
+comment7.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment8.params=e
+comment8.target=void\ mouseReleased(java.awt.event.MouseEvent)
+numComments=9

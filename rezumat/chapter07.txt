@@ -1,0 +1,112 @@
+hashCode() and equals()
+- overriding with public access; public boolean equals(Object o) {}   public int hashCode()
+- do not use transient variables
+
+COLLECTIONS: 
+- unordered - iterate in randmon order
+- ordered - iterate in a specific order - unsorted - ordered without any rule
+                                        - sorted - ordered according to some rules
+
+List: 
+- ordered and unsorted collection
+- allow null elements
+- ArrayList - fast iteration and access
+- Vector - like ArrayList, but synchronized methods
+- LinkedList - fast insertion and deletion; double link across elements
+
+Set: 
+- uses equals() method to check if duplicates
+- allow one null element
+- HashSet - unordered Set; uses object hashcode; objects in collection must implement hashCode() method
+- LinkedHashSet - ordered and unsorted version of HashSet; double link across elements 
+- TreeSet - sorted Set; elements in TreeSet must be sortable, else throws exception
+
+Map:
+- uses equals() method to compare keys
+- allow one null key and multiple null values
+- HashMap - unordered Map; uses object hashcode to determine if key exists
+- Hashtable - like HashMap, but synchronized methods
+- LinkedHashMap - ordered and unsorted version of HashMap;
+- TreeMap - sorted Map; key elements must be sortable, else throws exception
+
+Queue:
+- PriorityQueue - elements are sorted by to-do order
+
+Sorting collections:
+- Collections.sort(collection) - class of elements in collections must implements interface Comparable<Type> - Type must be class of elements
+- Collections.sort(collection, comparator) - sorts the collection acording to a comparator - a class which implements interface Comparator<Type>
+
+Sorting arrays:
+- Arrays.sort(array) - class of elements in array must implements interface Comparable<Type>; accepts arrays of primitives
+- Arrays.sort(array, comparator) - sort the collection according to a comparator; only for arrays of objects, not primitives
+
+Searching:
+- Arrays.binarySearch(array, element);
+- Arrays.binarySearch(array, element, comparator);
+- Collections.binarySearch(collection, element);
+- Collections.binarySearch(collection, element, comparator);
+- if element not found, return insertion point
+- sort BEFORE search, using SAME comparator
+
+Converting:
+- arrays to lists: Arrays.asList(array) - array and list will contain same object on heap
+- lists to arrays: - for List and Set 
+                   - toArray() - returns an Object[] array; 
+                   - toArray(array) - construct array from lists and return the array; elements type of array must match elements type of list
+
+Iterators:
+- hasNext() - does NOT move to next element, only check if remaining elements
+- next() - move to next element and returns it
+
+Sets:
+- when creating a TreeSet its elements must be comparable, else throws ClassCastException
+
+Navigating TreeSet and TreeMap:
+- navigation methods for TreeSet: lower(e) < e; ceiling(e) <= e; higher(e) > e; floor(e) >= e
+- navigation methods for TreeMap: lowerKey(e) < e; ceilingKey(e) <= e; higherKey(e) > e; floorKey(e) >= e
+- polling methods: pollFirst(), pollLast(), pollFirstEntry(), pollLastEntry() - remove and return element
+- reverse order: descendingSet(), descendingMap()
+
+Backed collections:
+- subcollection and collection contains same elements on heap
+- if element out of space is added in subcollection, throws exception
+- TreeSet methods: headSet(element) < element; subSet(element1, element2) >= element1, < element2; tailSet(element) >= element
+- TreeMap methods: headMap(element); subMap(element); tailMap(element)
+- each method is overloaded with second boolean argument, to specify if inclusive or exclusive
+
+PriorityQueue:
+- a comparator can be used to construct the queue
+- offer(element) - add element to queue
+- peek() - return first element
+- pool() - remove and return first element
+
+GENERICS:
+- if code with generic collections uses code which add element in non-generic collection (calls a method written in old style) - compiler warning
+- type erasure - typing information exists only at compile time not run time, it is removed out form class bytecode 
+- when using a non-type safe collection, get() method always return an Object, it must be cast to appropiate class 
+- polymorphism applies only to base type, not generic type; ex: List<Parent> list = new ArrayList<Child>() // compiler error
+
+Wildcards:
+- Collection<? extends Class> - accept collections with all generic types that passes instanceof Class
+- Collection<? super Class> - accept collections with generic type of Class or a supertype of Class
+- cannot be used when adding elements in collection
+- can be used only as reference type, not real object type on object creation
+  
+Create generics:
+- generic class ex: class MyClass<T> { }
+- generic method ex: public <T> void do(T t) { }
+- generic constructor ex: public <T> MyClass(T t) { }
+- when replacing T with a concrete class, only that concrete class can be used, not subclasses
+
+ex: class Rent<T> {
+        public void rent(T t) { }
+    }
+
+    // use of generic   Car extends Vehicle
+    class Rent<Vehicle> {  
+        public void rent(Car a) { } // compiler error, only Vehicle is allowed, not subclasses
+    }
+
+
+- wildcards can be used; ex: class Car<T extends Number> { }
+

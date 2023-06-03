@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=char[][]\ readInitialConfig()
+comment1.params=
+comment1.target=int[]\ readCommand()
+comment2.params=oo
+comment2.target=void\ saveGame(java.lang.Object)
+comment3.params=
+comment3.target=java.lang.Object\ loadGame()
+comment4.params=
+comment4.target=void\ main()
+numComments=5

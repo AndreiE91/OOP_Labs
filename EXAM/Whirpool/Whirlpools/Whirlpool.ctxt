@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=r\ c\ s
+comment0.target=Whirlpool(int,\ int,\ char)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Whirlpool\r\n
+comment1.params=
+comment1.target=void\ move()
+comment1.text=\r\n\ Move\ whirlpool\ in\ next\ position\r\n\ \r\n
+numComments=2

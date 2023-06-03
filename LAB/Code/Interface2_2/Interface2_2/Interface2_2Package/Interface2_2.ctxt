@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Integer\ methodA(int)
+comment0.text=\nmethodA\nWraps\ an\ integer\n@param\ \ i\ \ \ \ a\ dummy\ parameter\ for\ methodA\n@return\ \ \ \ \ \ the\ result\ produced\ by\ methodA\ \n\n
+comment1.params=c
+comment1.target=Character\ methodB(char)
+comment1.text=\nmethodB\nWraps\ a\ char\n@param\ \ c\ \ \ \ a\ dummy\ parameter\ for\ methodA\n@return\ \ \ \ \ \ the\ result\ produced\ by\ methodA\ \n\n
+comment2.params=d
+comment2.target=long\ methodC(double)
+comment2.text=\nmethodC\nTruncates\ a\ double\ to\ a\ long\n@param\ \ d\ \ \ \ parameter\ for\ methodC\n@return\ \ \ \ \ \ the\ result\ produced\ by\ methodA\ \n\n
+numComments=3

@@ -1,0 +1,25 @@
+#BlueJ package file
+package.editor.height=386
+package.editor.width=560
+package.editor.x=-24
+package.editor.y=51
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+readme.editor.height=521
+readme.editor.width=618
+readme.editor.x=0
+readme.editor.y=0
+target1.editor.height=521
+target1.editor.width=618
+target1.editor.x=570
+target1.editor.y=20
+target1.height=50
+target1.name=HappyPenConstants
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=140
+target1.x=10
+target1.y=90

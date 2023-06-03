@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(String[])
+comment1.target=void\ createGUI()
+comment2.target=HappyPenFrame\ getWindow()
+comment3.target=DrawingModel\ getModel()
+comment4.target=DrawingView\ getView()
+comment5.params=newDrawing
+comment5.target=void\ insertModel(DrawingModel)
+numComments=6

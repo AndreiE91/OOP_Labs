@@ -1,0 +1,25 @@
+Compile:
+- specify class files destination at compile: javac -d <destination> MyClass.java
+- if destination directory does not exists - compiler error 
+
+Launch application:
+- do not specify the .class extension
+- using properties: java -Dname=value MyClass
+
+Using classpath:
+- must be used both on compile and run to find classes
+- classes are searched in specified order
+- if same class in many locations, first location will be used without searching the other locations
+- ex: javac -classpath /com/foo/acct:/com/foo
+- current directory is not searched by default, it must be specified; ex: -classpath .:/foo
+- classpath must find the class which is executed too
+
+JAR files:
+- include name of jar in path; ex: -classpath ws/myApp.jar
+
+Static imports:
+- import static variables and methods from other class
+- if ambigous names - compiler error; 
+ex: import static Integer.*;
+    import static Long.*;
+    // both Integer and Long have constant MAX_VALUE, if access it compiler error

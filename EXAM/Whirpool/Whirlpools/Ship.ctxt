@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=r\ c\ s\ river
+comment0.target=Ship(int,\ int,\ char,\ River)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ship\r\n
+comment1.params=
+comment1.target=void\ move()
+comment1.text=\r\n\ Muve\ ship\ to\ next\ position\r\n\ \r\n
+numComments=2

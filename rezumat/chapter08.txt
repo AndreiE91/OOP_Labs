@@ -1,0 +1,22 @@
+Regular inner classes:
+- instance members of outer class
+- cannot have static methods
+- access it only through a live instance of outer class
+- instantiating from outer class: MyInner in = new MyInner()
+- instantiating from other class: MyOuter.MyInner inner = new MyOuter().new MyInner()
+- reference "this" in inner class refers to instance of the inner class
+- referencing outer class from inner class: MyOuter.this
+- inner class can access private members of outer class
+
+Method local inner classes:
+- WATCH OUT when using local method variables in inner class, must be declared final
+- local class declared in a static method have access only to static members of outer class
+
+Anonymous classes:
+- WATCH OUT for using members defined in anonymous class, only members from base class are available
+- WATCH OUT for closing semicolon at the end (;)
+
+Static nested classes:
+- static members of outer class
+- can be accesses without having an instance of outer class: Outer.Inner inner = new Outer.Inner();
+- cannot access instance member of outer class, only static members

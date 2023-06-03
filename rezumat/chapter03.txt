@@ -1,0 +1,101 @@
+Stack and Heap: 
+- instance variables and objects on the heap                
+- local variables on the stack
+
+Literals: 
+- octal literals - place zero in front; ex: int eight = 010;           
+- hex literals - prefix 0x; ex: int x = 0xDeadCafe;
+- floating point literals - by default are defined as double                                    
+- declare double with optional d at the end                                    
+- declare float with f at the end
+- ex: float f = 32.3 // will not compile, 32.3 is double by default                
+- ex: float f = (float) 32.3;   float f = 32.3f;  // these will compile
+- character literals - characters are 16-bit unsigned integers                     
+- a number can be assigned to a char if the number fit in 16-bit range                     
+- ex: char b = 982;  char c = (char) 70000; // if number is out of range, cast is required
+
+Assigments: 
+- int or smaller expressions always results in an int           
+- ex: byte a = 2; byte b = 3; byte c = a + b;  // will not compile, need explicit cast: byte c = (byte) (a+b);           
+- compound operators (+=, -=, *=, /=) will put and implicit cast; ex: byte b = 3; b += 7;
+
+Variables: 
+- instance and static variables are initialized with default values           
+- instance and static objects are initialized with null;           
+- !!! WATCH OUT for NullPointerException; 
+
+Ex: 
+class Book {    
+    private String title;    
+    public static void main(String args[]) {        
+    s.toLowerCase(); // title is initialized by default with null
+} 
+
+- an array is an object, so it will initialized by default to null
+- array elements are initialized with default values, based on their type
+- local variables are not initialized, must be initialized explicitily
+- local objects are not initialized to null; 
+- ex: Date date; if (date == null) { ... } // compiler error, date is not initialized; Date date = null; - to compile
+
+Passing variables into methods: 
+- a primitive variable keeps the value of variable
+- an object variable keeps the reference to the object
+- when a method is called, a copy of what variable contains is passed into method
+- so, for primitives, a copy of its value is passed, for objects, a copy with reference to object is passed
+
+Arrays: 
+- declare array without size; ex: int[5] scores // will not compile
+- construct array - size is reqiured; ex: int[] scores = new int[] // will not compile
+- multidimensional arrays: ex: int[][] myArray = new int[3][]; 
+- only the size of array is required; 
+- !!! WATCH OUT for ArrayIndexOutOfBoundsException 
+- anonymous arrays can be passed in a method; ex: takesAnArray(new int[] {7, 7, 8, 2, 5});
+- anonymous arrays - do not specify size
+- an array with elements from a class can contains elements from a subclass 
+- ex: Car[] myCars = new {new Subaru(), new Car(), new Ferrari()};
+
+Ex:
+int[] intArray; 
+short shortArray[] = new short[5]; 
+intArray = shortArray  // will not compile even short can be assigned to an int    
+
+Car[] cars; 
+Honda honda = new Honda[5]; 
+cars = honda;  // for objects it works, as opossite to primitives
+
+Initialization blocks:
+- runs every time a new instance is created, after superconstructor runs
+- if many init block in class, runs in order of appearance 
+
+Wrapper classes and boxing: 
+- wrappers are immutable, its values cannot be changed                            
+- valueOf() - takes a String and optional a radix, return the wrapper                           
+- xxxValue() - returns primitive type                            
+- parseXXX() - static method, takes a String and optional a radix, returns primitive type; convert from radix base to decimal                           
+- toString() - instance method works as expected; static method works as instance method; static method with radix                            
+- toXXXString() - static method to convert number in other base; ex: Integer.toHexString(254); // returns "fe"
+
+Autoboxing: 
+- two instance of the following wrappers: Boolean, Byte, Character (from \u0000 to \u007F), Short and Integer (from -127 to 128) will be equal if 
+their primitive values are the same
+
+Ex: Integer i1 = 1000; Integer i2 = 1000; if (i1 == i2) { } // if test will not pass   
+    Integer i3 = 10; Integer i3 = 10; if (i3 == i4) { } // if test will pass
+
+- wrappers can be initialized with null, watch out for NullPointerException
+
+Overloading: 
+- when an exact match is not found, the method with the smallest argument that is wider then paramater is called             
+- ex: byte b = 5; void go(int x); void go(long x); void go(double x); - go(int) is called             
+- widdening beat boxing; ex: int i = 5; void go(Integer x); void go(long x); - go(long) is called             
+- widdening beat var-args; ex: byte b = 5; void go(int x, int y); void go(byte... b); go(b, b); - go(int, int) is called             
+- boxing beat var-args; ex: byte b = 5; void go(Byte x, Byte y); void go(byte... x); go(b); - go(Byte, Byte) is called             
+- widdening then boxing does not work; ex: byte b = 5; void go(Lonx x); go(b) - will not compile                          
+- boxing then widdening works; ex: byte b = 5; void go(Object o); go(b) - this compiles fine
+
+Garbage collector:
+- an object is eligible for garbage collection when no live thread can access it
+- make objects eligible for garbage collection: - nulling a reference
+                                                - reassigning a reference variable
+                                                - isolating a reference - islands of isolation
+- objects created in a method are also eligible for garbage collecting, except the object wich is returned from method

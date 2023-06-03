@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=name\ symbol\ board
+comment0.target=Player(String,\ char,\ TicTacToe)
+comment0.text=\nConstructor\ for\ objects\ of\ class\ Player\n@param\ name\ player\ name\n@param\ symbol\ caracter\ to\ use\ for\ marking\ move\n@param\ board\ reference\ to\ game\ board\n\n
+comment1.target=boolean\ move()
+comment1.text=\nAccepts\ from\ System.in\ the\ coordinates\ of\ the\ move\nand\ attempts\ to\ movei\n@return\ true\ if\ successful,\ false\ otherwise\n\n
+numComments=2

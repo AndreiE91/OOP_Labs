@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=River()
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment10.params=sc\ row
+comment10.target=void\ readWater(java.util.Scanner,\ int)
+comment11.params=sc
+comment11.target=void\ readBridge(java.util.Scanner)
+comment2.params=
+comment2.target=int[]\ getWhirlpoolPositions()
+comment3.params=
+comment3.target=int[]\ getWhirlpoolsToLaunch()
+comment4.params=
+comment4.target=boolean\ moreWhirlpools()
+comment5.params=
+comment5.target=void\ doStep()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment7.params=
+comment7.target=void\ initWater()
+comment8.params=
+comment8.target=void\ readConfig()
+comment9.params=sc
+comment9.target=void\ readWhirlpools(java.util.Scanner)
+numComments=12

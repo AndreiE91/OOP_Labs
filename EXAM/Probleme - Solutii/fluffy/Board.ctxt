@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Board()
+comment1.params=c
+comment1.target=void\ setMaze(char[][])
+comment2.params=
+comment2.target=boolean\ gameOver()
+comment3.params=a\ b
+comment3.target=boolean\ checkHat(int,\ int)
+comment4.params=a\ b
+comment4.target=void\ moveCat(int,\ int)
+comment5.params=aux
+comment5.target=void\ setMove(int[])
+comment6.params=
+comment6.target=void\ view()
+numComments=7

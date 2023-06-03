@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=element
+comment0.target=boolean\ remove(Element)
+comment1.params=element
+comment1.target=void\ add(Element)
+comment2.target=Iterator<Element>\ iterator()
+numComments=3

@@ -1,0 +1,18 @@
+
+0
+java:S1220""Move this file to a named package.
+V
+java:S1854";Remove this useless assignment to local variable "string1".(“Ÿîåÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ê¡Ûúÿÿÿÿ
+f
+java:S1764"KCorrect one of the identical sub-expressions on both sides of operator "=="(Ê¡Ûúÿÿÿÿ
+?
+java:S2129"$Remove this "BigInteger" constructor(Á©‹İúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’Ğù
+G
+java:S1481",Remove this unused "string1" local variable.(“Ÿîåÿÿÿÿÿ
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(‰…ªéÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¦œŠË
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™É€
+S	java:S106"9Replace this use of System.out or System.err by a logger.(û²ØÈøÿÿÿÿ

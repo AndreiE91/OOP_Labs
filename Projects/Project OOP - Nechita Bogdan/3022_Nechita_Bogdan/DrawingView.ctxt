@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=theApp
+comment0.target=DrawingView(HappyPen)
+comment1.params=o\ rectangle
+comment1.target=void\ update(Observable,\ Object)
+comment2.params=g
+comment2.target=void\ paint(Graphics)
+numComments=3

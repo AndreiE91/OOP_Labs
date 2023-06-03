@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=nb
+comment0.target=ClassA(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClassA\r\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=a
+comment2.target=java.lang.String\ toStringForOtherObject(ClassA)
+numComments=3

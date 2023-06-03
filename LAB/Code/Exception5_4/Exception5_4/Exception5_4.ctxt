@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=void\ f()
+comment0.text=\nf\ \ -\ method\ catching\ exception\ thrown\ by\ g()\n\n
+comment1.target=void\ g()
+comment2.params=args
+comment2.target=void\ main(String[])
+numComments=3

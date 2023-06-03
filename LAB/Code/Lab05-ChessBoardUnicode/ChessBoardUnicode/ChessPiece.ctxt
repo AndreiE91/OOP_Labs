@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=s_console\ row\ col\ symbol\ color
+comment0.target=ChessPiece(enigma.console.Console,\ int,\ int,\ char,\ java.awt.Color)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ChessPiece\r\n
+comment1.params=row\ col
+comment1.target=boolean\ move(int,\ int)
+comment1.text=\r\n\ Move\ to\ row,\ col\ on\ the\ board\r\n\ \r\n\ @param\ \ row\ destination\ row\r\n\ @param\ \ col\ destination\ col\r\n\ @return\ true\ if\ can\ move,\ false\ otherwise\ \r\n
+comment2.params=attrs\ back
+comment2.target=void\ print(enigma.console.TextAttributes,\ java.awt.Color)
+numComments=3

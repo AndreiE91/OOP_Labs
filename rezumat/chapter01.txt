@@ -1,0 +1,23 @@
+Identifiers: contains letters, $, _ (underscore), digits; cannot start with digit
+
+JavaBeans: getXXX(), setXXX(), boolean isXXX(), addXXXListener(XXXListener), removeXXXListener(XXXListener)
+
+Interfaces: - methods are default public abstract, cannot be private, protected, final, strictfp, native
+            - only instance methods allowed, no static methods
+            - only constant variables allowed, by default public static final
+
+Modifiers: - protected: access to variables and methods only through inheritance
+           - native: only for methods
+           - strictfp: only for classes and methods
+
+Local variables: - accept only final modifier
+                 - are not initialized with default values
+
+Var args: - only one var arg, declared last arg, equivalent with 0 or more args, syntax: int... x
+          - accept an array as parameter
+          - can be iterated like an array
+
+Enums: - declared as a class member or in a separate class, can not be declared in a method; 
+       - every enum item extends class Enum which has the constructor declared protected
+       - every enum has static method values(), returns an array with items
+       - can NOT be instantiated (cannot call constructor)

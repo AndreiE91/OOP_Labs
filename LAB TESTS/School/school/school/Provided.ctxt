@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String[]\ generatePersonInfo()
+comment1.params=birthDate
+comment1.target=java.lang.String\ generateSSN(java.lang.String)
+comment2.params=len
+comment2.target=java.lang.String\ generateText(int)
+comment3.params=wing\ floor
+comment3.target=java.lang.String[]\ generateClassRoomInfo(char,\ int)
+comment4.params=wing\ floor
+comment4.target=java.lang.String\ genClassroomInfo(char,\ int)
+numComments=5

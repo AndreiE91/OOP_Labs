@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=rep
+comment0.target=Pod(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pod\r\n
+comment1.params=coloana
+comment1.target=boolean\ suntLovit(int)
+comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ coloana\ \ \ coloana\ obiectului\ care\ poate\ lovi\ podu;\r\n\ @return\ \ \ \ \ true\ daca\ coloana\ obiectului\ coincide\ cu\ un\ pilon\ (marcat\ cu\ 'B')\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

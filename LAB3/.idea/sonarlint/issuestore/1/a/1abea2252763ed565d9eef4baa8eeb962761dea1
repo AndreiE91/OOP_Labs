@@ -1,0 +1,15 @@
+
+0
+java:S1220""Move this file to a named package.
+X
+java:S2583"CChange this condition so that it does not always evaluate to "true"(ïe
+^
+java:S2583"CChange this condition so that it does not always evaluate to "true"(¡¡³îøÿÿÿÿ
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(€²ğ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡ñıÃúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(€²ğ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡ñıÃúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÓóïÙúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³¾æÂøÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ÓóïÙúÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(³¾æÂøÿÿÿÿ
